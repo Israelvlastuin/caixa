@@ -1,25 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixa</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <ul>
-        <li><a href="#insere">Insere</a></li>
-        <li><a href="#atualiza">Atualiza</a></li>
-        <li><a href="#pesquisa">Pesquisa</a></li>
-      </ul>
+<html lang="pt-BR">
 
-      <table>
-        <tr>
-          <th>movimentacao</th>
-          <th>data</th>
-          <th>Descricao</th>
-          <th>valor</th>
-          <th>tipo</th>
-        </tr>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Transações</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <ul>
+    <li><button class="menu"><a href="insere.html">Insere</a></button></li>
+    <li><button class="menu" id="atualiza"><a href="#Atualiza">Atualiza</a></button></li>
+    <li><button class="menu"><a href="pesquisa.html">Pesquisa</a></button></li>
+  </ul>
+
+  <table>
+    <tr>
+      <th>Movimentação</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Valor</th>
+      <th>Tipo</th>
+    </tr>
+  </table>
+
+
+  <script>
+    document.getElementById('atualiza').addEventListener('click', function () {
+      location.reload();
+    });
+  </script>
+
 </body>
+
+
+<style>
+  body {
+    background: linear-gradient(to right, 	#4682B4, #4169E1);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+  button{
+    background-color: #111;
+  }
+  button:hover{
+    background-color: #333;
+  }
+
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+  }
+
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+
 </html>

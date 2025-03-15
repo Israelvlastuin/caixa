@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Transações</title>
+
+</head>
+
+<body>
+    <!--portuguesa, calabreza, 12 pedacos-->
+    <!--seta mais button = setao, ou seja é o botao da seta-->
+    <div id="seta">
+        <button id="setao">
+            <a href="index.html"></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+            </i>
+        </button>
+    </div>
+    <div class="container">
+        <h2>Pesquisa de Transações</h2>
+
+        <label for="start-date">Data Inicial:</label>
+        <input type="date" name="start-date" id="start-date" />
+
+        <label for="end-date">Data Final:</label>
+        <input type="date" name="end-date" id="end-date" />
+
+        <label for="value">Valor:</label>
+        <input type="number" name="valor" id="value" step="0.01" />
+
+        <label for="tipo">Tipo:</label>
+        <select name="tipo" id="tipo">
+            <option value="">Todos</option>
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saída</option>
+        </select>
+
+        <button type="submit" id="Pesquisar">Pesquisar</button>
+    </div>
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right, #56ccf2, #2f80ed);
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input,
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #2f80ed;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #pesquisar {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #4682B4;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+
+    button:hover {
+        background: #2563c2;
+    }
+
+    svg {
+        height: 50px;
+        width: 40px;
+        align-self: center;
+        color: black;
+    }
+
+    #seta {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        height: 40px;
+        width: 50px;
+
+
+    }
+
+    #setao {
+        height: 60px;
+        width: 80px;
+        align-items: center;
+
+    }
+</style>
+
+</html>
